@@ -26,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About me</a>
+                            <a class="nav-link" href="#cookie">What we bake</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#ingredients">Ingredients</a>
@@ -46,11 +46,11 @@
         
             <div class="row">
                 <div class="col-md-6">
-                    <img src="https://noseryoung.ch/wp-content/uploads/2023/09/Anna_Nell.jpg" class="img-fluid" alt="Anna Nell Image">
+                    <img src="https://res.cloudinary.com/swissmilk/image/fetch/ar_16:10,g_auto,w_1728,c_fill,f_auto,q_auto,fl_progressive/https://api.swissmilk.ch/wp-content/uploads/2021/10/RB_KAF2002_12_A_Chocolate_Chips_Cookies.jpg" class="img-fluid" alt="Anna Nell Image">
                 </div>
                 <div class="col-md-6">
-                    
-                    <h1 class="section-title">About me</h1> 
+                    <div class="text-container">
+                  <div  <h1 class="section-title">What we bake</h1> </div>
                     
                     
                     <p>My name is Anna and i love to bake or try new recipes.</p>
@@ -65,40 +65,87 @@
 <!-- Ingredients Section -->
 <section id="ingredients" class="section">
     <div class="container">
-        <h2 class="section-title">Ingredients</h2>
+
+         <h2 class="section-title">Ingredients</h2>
+
+         <label for="portionInput">Number of portions:</label>
+         <input type="number" id="portionInput" min="1" value="1">
+         <button onclick="calculateIngredients()">Recalculate</button>
+
         <div class="ingredient-list">
             <div class="ingredient-item" data-tooltip="Click to reveal more details">
-                <span>2 baking trays</span>
+                <span id="trays">2</span> baking trays
             </div>
             <div class="ingredient-item" data-tooltip="Click to reveal more details">
-                <span>Baking paper</span>
+                <span id="paper">Baking paper</span>
             </div>
             <div class="ingredient-item" data-tooltip="Click to reveal more details">
-                <span>110g soft Butter</span>
+                <span id="butter">110</span>g soft Butter
             </div>
             <div class="ingredient-item" data-tooltip="Click to reveal more details">
-                <span>175g Sugar</span>
+                <span id="sugar">175</span>g Sugar
             </div>
             <div class="ingredient-item" data-tooltip="Click to reveal more details">
-                <span>¼ parcel Vanillasugar</span>
+                <span id="vanilla">¼</span> parcel Vanillasugar
             </div>
             <div class="ingredient-item" data-tooltip="Click to reveal more details">
-                <span>¼ tsp Salt</span>
+                <span id="salt">¼</span> tsp Salt
             </div>
             <div class="ingredient-item" data-tooltip="Click to reveal more details">
-                <span>1 Egg</span>
+                <span id="egg">1</span> Egg
             </div>
             <div class="ingredient-item" data-tooltip="Click to reveal more details">
-                <span>150g Chocolate</span>
+                <span id="chocolate">150</span>g Chocolate
             </div>
             <div class="ingredient-item" data-tooltip="Click to reveal more details">
-                <span>160g Flour</span>
+                <span id="flour">160</span>g Flour
             </div>
             <div class="ingredient-item" data-tooltip="Click to reveal more details">
-                <span>1 pinch Baking powder</span>
+                <span id="bakingPowder">1 pinch</span> Baking powder
             </div>
         </div>
+
+        
     </div>
+
+    <script>
+        function calculateIngredients() {
+            const portionMultiplier = document.getElementById("portionInput").value;
+
+            // Zutaten und ihre ursprünglichen Mengen
+            const ingredients = {
+                trays: 2,
+                paper: "Baking paper",
+                butter: 110,
+                sugar: 175,
+                vanilla: 0.25,
+                salt: 0.25,
+                egg: 1,
+                chocolate: 150,
+                flour: 160,
+                bakingPowder: "1 pinch",
+            };
+
+            // Durchlaufe die Zutaten und multipliziere die Mengen entsprechend
+            for (const ingredient in ingredients) {
+                if (typeof ingredients[ingredient] === "number") {
+                    // Wenn die Zutat eine Zahl ist, multipliziere sie mit dem Portionen-Multiplikator
+                    ingredients[ingredient] *= portionMultiplier;
+                }
+            }
+
+            // Aktualisiere die Anzeige der Zutaten
+            document.getElementById("trays").textContent = ingredients.trays;
+            document.getElementById("butter").textContent = ingredients.butter;
+            document.getElementById("sugar").textContent = ingredients.sugar ;
+            document.getElementById("vanilla").textContent = ingredients.vanilla;
+            document.getElementById("salt").textContent = ingredients.salt;
+            document.getElementById("egg").textContent = ingredients.egg;
+            document.getElementById("chocolate").textContent = ingredients.chocolate ;
+            document.getElementById("flour").textContent = ingredients.flour ;
+            document.getElementById("bakingPowder").textContent = ingredients.bakingPowder;
+        }
+    </script>
 </section>
 
 <!-- Recipe Section -->

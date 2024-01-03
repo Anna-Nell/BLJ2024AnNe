@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section id="ingredients" class="section">
+    <div class="container">
+        <h2 class="section-title">Ingredients</h2>
+        
+        <div class="ingredient-list">
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span id="trays">2</span> baking trays
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span id="paper">Baking paper</span>
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span id="butter">110</span>g soft Butter
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span id="sugar">175</span>g Sugar
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span id="vanilla">¼</span> parcel Vanillasugar
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span id="salt">¼</span> tsp Salt
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span id="egg">1</span> Egg
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span id="chocolate">150</span>g Chocolate
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span id="flour">160</span>g Flour
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span id="bakingPowder">1 pinch</span> Baking powder
+            </div>
+        </div>
+
+        <label for="portionInput">Number of portions:</label>
+        <input type="number" id="portionInput" min="1" value="1">
+        <button onclick="calculateIngredients()">Recalculate</button>
+    </div>
+
+    <script>
+        function calculateIngredients() {
+            const portionMultiplier = document.getElementById("portionInput").value;
+
+            // Zutaten und ihre ursprünglichen Mengen
+            const ingredients = {
+                trays: 2,
+                paper: "Baking paper",
+                butter: 110,
+                sugar: 175,
+                vanilla: 0.25,
+                salt: 0.25,
+                egg: 1,
+                chocolate: 150,
+                flour: 160,
+                bakingPowder: "1 pinch",
+            };
+
+            // Durchlaufe die Zutaten und multipliziere die Mengen entsprechend
+            for (const ingredient in ingredients) {
+                if (typeof ingredients[ingredient] === "number") {
+                    // Wenn die Zutat eine Zahl ist, multipliziere sie mit dem Portionen-Multiplikator
+                    ingredients[ingredient] *= portionMultiplier;
+                }
+            }
+
+            // Aktualisiere die Anzeige der Zutaten
+            document.getElementById("trays").textContent = ingredients.trays;
+            document.getElementById("butter").textContent = ingredients.butter + "g";
+            document.getElementById("sugar").textContent = ingredients.sugar + "g";
+            document.getElementById("vanilla").textContent = ingredients.vanilla;
+            document.getElementById("salt").textContent = ingredients.salt;
+            document.getElementById("egg").textContent = ingredients.egg;
+            document.getElementById("chocolate").textContent = ingredients.chocolate + "g";
+            document.getElementById("flour").textContent = ingredients.flour + "g";
+            document.getElementById("bakingPowder").textContent = ingredients.bakingPowder;
+        }
+    </script>
+</section>
+
+</body>
+</html>

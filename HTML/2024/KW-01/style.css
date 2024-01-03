@@ -21,12 +21,37 @@ body {
     font-size: 24px;
     font-weight: bold; 
     color: #333;
+    font-family: 'monospace';
 }
 
 h1 {
     color: #37533c
     
   
+}
+
+
+.col-md-6
+.section-title {
+    font-size: 130px; /* 2rem ist eine Maßeinheit für die Größe der Schrift, du kannst dies nach Bedarf anpassen */
+    text-transform: uppercase;
+    text-align: center; /* Hier sollte "center" für die horizontale Ausrichtung verwendet werden */
+    font-family: 'David'; /* Ändere 'Arial' durch die gewünschte Schriftart */
+    color: #37533c;
+}
+
+
+
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 100%; 
+}
+
+.text-container h1, .text-container p {
+    margin: 0; /* Entfernt den Standardabstand von h1 und p */
 }
 
 .header {
@@ -83,7 +108,7 @@ h1 {
     margin-right: 20px; 
 }
 .col-md-6 img {
-    max-width: 60%;
+    max-width: 100%;
     float: left;
     display: block; 
     margin: 0 auto; 
@@ -101,10 +126,11 @@ h1 {
 .section-title {
     font-size: 24px;
     text-transform: uppercase;
+    font-family: 'David';
 }
 
 .section-image {
-    max-width: 50%;
+    max-width: 70%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
