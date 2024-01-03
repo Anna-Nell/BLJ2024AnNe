@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+           
+            <div class="container">
+               
+                <a class="navbar-brand" href="#">
+                </a><span class="brand-title">Backing cookies with Anna</span> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ingredients">Ingredients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recipe">Recipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Tipps & Tricks">Tipps & Tricks</a>
+                        </li>s
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="about" class="about">
+        
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://noseryoung.ch/wp-content/uploads/2023/09/Anna_Nell.jpg" class="img-fluid" alt="Anna Nell Image">
+                </div>
+                <div class="col-md-6">
+                    
+                    <h1 class="section-title">About me</h1> 
+                    
+                    
+                    <p>My name is Anna and i love to bake or try new recipes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    </section>
+
+<!-- Ingredients Section -->
+<section id="ingredients" class="section">
+    <div class="container">
+        <h2 class="section-title">Ingredients</h2>
+        <div class="ingredient-list">
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span>2 baking trays</span>
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span>Baking paper</span>
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span>110g soft Butter</span>
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span>175g Sugar</span>
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span>¼ parcel Vanillasugar</span>
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span>¼ tsp Salt</span>
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span>1 Egg</span>
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span>150g Chocolate</span>
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span>160g Flour</span>
+            </div>
+            <div class="ingredient-item" data-tooltip="Click to reveal more details">
+                <span>1 pinch Baking powder</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Recipe Section -->
+<section id="recipe" class="section">
+    <div class="container">
+        <h2 class="section-title">Recipe</h2>
+        <p>1. Butter rühren, bis sich die Spitzchen bilden. Zucker, Vanillezucker, Salz und Ei beigeben, rühren, bis die Masse hell ist.Schokolade darunterrühren. Mehl und Backpulver mischen, dazusieben, zu einem geschmeidigen Teig verrühren.</p> <hr>
+        <p>2. Mit 2 Teelöffeln knapp baumnussgrosse Teigkugeln auf die vorbereiteten Bleche legen. Mit kalt abgespülten Händen leicht flachdrücken, so dass sie 1 cm hoch werden, 15 Minuten kühl stellen.</p> <hr>
+        <p>3. Ofen auf 155°C Heissluft vorheizen (175°C Ober-/Unterhitze).</p> <hr>
+        <p>4. In der Mitte des vorgeheizten Ofens 11-13 Minuten backen.</p>
+
+    </div>
+       
+    
+</section>
+
+<!-- Tips & Tricks Section -->
+<section id="tips" class="section">
+    <div class="container">
+        <h2 class="section-title">Tips & Tricks</h2>
+        <p>Here are some tips and tricks for baking delicious cookies. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </div>
+</section>
+
+<!-- Bootstrap JS und jQuery einbinden (für Navbar-Funktionalität) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,92 @@
+body {
+  background-color: #d6c8b4; /* White background for the entire page */
+}
+
+.navbar {
+  background-color: #37533c; /* Red background for the navigation bar */
+}
+
+.navbar-toggler-icon {
+  border-color: #37533c
+  ; /* White color for the navbar toggle icon */
+}
+
+#about,
+#ingredients,
+#recipe,
+.additional-section,
+#contact {
+  background-color: #f8f9fa; /* Light gray background for these sections */
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 800px; /* Adjust the max-width as needed */
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+/* Tooltip Styles */
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+
+[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* Contact Section Styles */
+#contact {
+  background-color: #006400; /* Dark green background for the contact section */
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.contact-container {
+  max-width: 600px; /* Adjust the max-width as needed */
+}
+
+.contact-container p {
+  margin-bottom: 20px;
+}
+
+/* Additional Section Styles */
+.additional-section {
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.additional-section img {
+  border-radius: 10px 10px 0 0;
+}
+
+.additional-section h2 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  border-radius: 8px 8px 0 0;
+}

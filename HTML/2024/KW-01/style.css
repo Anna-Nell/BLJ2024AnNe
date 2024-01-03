@@ -1,0 +1,148 @@
+/* Globale Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d6c8b4
+    ;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+   
+}
+.brand-title {
+    font-size: 24px;
+    font-weight: bold; 
+    color: #333;
+}
+
+h1 {
+    color: #37533c
+    
+  
+}
+
+.header {
+    background: linear-gradient(90deg, #37533c, #37533c); 
+    padding: 10px 0;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header a.navbar-brand,
+.header .nav-link {
+    color: #fff;
+}
+
+.header a.navbar-brand:hover,
+.header .nav-link:hover {
+    color: #37533c;
+}
+
+/* Inhaltsverzeichnis Styles */
+.contents {
+    background-color: #f0f0f0;
+    border-left: 5px solid #37533c; 
+    padding: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.contents-title {
+    color: #37533c;
+}
+
+.contents-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contents-list li {
+    margin-bottom: 10px;
+}
+
+.contents-list a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contents-list a:hover {
+    color: #37533c;
+}
+
+.about .profile-image {
+    max-width: 50%;
+    float: left; 
+    margin-right: 20px; 
+}
+.col-md-6 img {
+    max-width: 60%;
+    float: left;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.about .profile-image:hover {
+    border-color: #37533c; 
+}
+
+/* Hauptseite mit Textabschnitten Styles */
+.section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.section-image {
+    max-width: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.section-image:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/* Impressum-Seite Styles */
+.impressum {
+    background: linear-gradient(90deg, #37533c, #37533c); 
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.impressum p {
+    margin: 0;
+}
+
+/* Hover-Effekt auf der gesamten Seite */
+.container:hover,   
+.contents:hover,
+.about:hover,
+.section:hover,
+.impressum:hover {
+    background-color:#d6c8b4, #fff; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.container,
+.contents,
+.about,
+.section,
+.impressum {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
