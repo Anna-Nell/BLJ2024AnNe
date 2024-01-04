@@ -112,7 +112,7 @@
         function calculateIngredients() {
             const portionMultiplier = document.getElementById("portionInput").value;
 
-            // Zutaten und ihre ursprünglichen Mengen
+            
             const ingredients = {
                 trays: 2,
                 paper: "Baking paper",
@@ -126,15 +126,15 @@
                 bakingPowder: "1 pinch",
             };
 
-            // Durchlaufe die Zutaten und multipliziere die Mengen entsprechend
+            
             for (const ingredient in ingredients) {
                 if (typeof ingredients[ingredient] === "number") {
-                    // Wenn die Zutat eine Zahl ist, multipliziere sie mit dem Portionen-Multiplikator
+                    
                     ingredients[ingredient] *= portionMultiplier;
                 }
             }
 
-            // Aktualisiere die Anzeige der Zutaten
+            
             document.getElementById("trays").textContent = ingredients.trays;
             document.getElementById("butter").textContent = ingredients.butter;
             document.getElementById("sugar").textContent = ingredients.sugar ;
@@ -152,16 +152,17 @@
 <section id="recipe" class="section">
     <div class="container">
         <h2 class="section-title">Recipe</h2>
-        <p>1. Butter rühren, bis sich die Spitzchen bilden. Zucker, Vanillezucker, Salz und Ei beigeben, rühren, bis die Masse hell ist.Schokolade darunterrühren. Mehl und Backpulver mischen, dazusieben, zu einem geschmeidigen Teig verrühren.</p> 
-        <img src="c:\Users\Anna\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\2130EB640E0A272898A51DA41363542D\WhatsApp Bild 2024-01-04 um 10.07.30_b9f3cd15.jpg" alt="Bild 1" class="section-image"> <img src="bild2.jpg" alt="Bild 2" class="section-image"><img src="bild2.jpg" alt="Bild 2" class="section-image"><img src="bild2.jpg" alt="Bild 2" class="section-image"> <hr>
-        <p>2. Mit 2 Teelöffeln knapp baumnussgrosse Teigkugeln auf die vorbereiteten Bleche legen. Mit kalt abgespülten Händen leicht flachdrücken, so dass sie 1 cm hoch werden, 15 Minuten kühl stellen.</p> 
-        <img src="bild2.jpg" alt="Bild 2" class="section-image"><img src="bild2.jpg" alt="Bild 2" class="section-image"><hr> 
-        <p>3. Ofen auf 155°C Heissluft vorheizen (175°C Ober-/Unterhitze).</p> 
-        <img src="bild2.jpg" alt="Bild 2" class="section-image"> <hr>
-        <p>4. In der Mitte des vorgeheizten Ofens 11-13 Minuten backen.</p>
-        <img src="bild2.jpg" alt="Bild 2" class="section-image"><hr>
-        <p>1 stück enthält:
-        Energie: 301kJ / 72kcal, Fett: 4g, Kohlenhydrate: 9g, Eiweiss: 1g</p>
+        <p>1. Stir butter until peaks form. Add sugar, vanilla sugar, salt and egg, stir until the mixture is light. Stir in the chocolate. Mix the flour and baking powder, sift in, stir into a smooth dough.</p> 
+        <img src="c:\Users\Anna\Pictures\WhatsApp Bild 2024-01-04 um 10.07.30_723269b8.jpg" alt="Bild 1" class="section-image"> <img src="c:\Users\Anna\Pictures\WhatsApp Bild 2024-01-04 um 10.07.29_d4d325a7.jpg" alt="Bild 2" class="section-image"><img src="c:\Users\Anna\Pictures\WhatsApp Bild 2024-01-04 um 10.07.29_d100292c.jpg" alt="Bild 3" class="section-image"><img src="c:\Users\Anna\Pictures\WhatsApp Bild 2024-01-04 um 10.07.28_89620359.jpg" alt="Bild 4" class="section-image"> <hr>
+        <p>2. Using 2 teaspoons, place balls of dough the size of a walnut on the prepared trays. Using cold-rinsed hands, flatten slightly so that they are 1 cm high and refrigerate for 15 minutes.</p> 
+        <img src="c:\Users\Anna\Pictures\WhatsApp Bild 2024-01-04 um 10.07.28_73a4a1d6.jpg" alt="Bild 2" class="section-image"><hr> 
+        <p>3. Preheat the oven to 155°C hot air (175°C top/bottom heat). Make sure you sweep the surfaces in half the time. ATTENTION: If you use top/bottom heat, add the sheets one after the other.</p> 
+        <img src="c:\Users\Anna\Pictures\WhatsApp Bild 2024-01-04 um 10.07.27_4f920af4.jpg" alt="Bild 7" class="section-image"> <hr>
+        <p>4. Bake in the center of the preheated oven for 11-13 minutes.</p>
+        <img src="c:\Users\Anna\Pictures\WhatsApp Bild 2024-01-04 um 10.07.27_8804904b.jpg" alt="Bild 2" class="section-image">
+        <img src="c:\Users\Anna\Pictures\WhatsApp Bild 2024-01-04 um 10.10.34_a757dcb1.jpg" alt="Bild 2" class="section-image"><hr>
+        <p>1 piece contains:
+            Energy: 301kJ / 72kcal, fat: 4g, carbohydrates: 9g, protein: 1g</p>
     </div>
        
     
@@ -177,6 +178,21 @@
     </div>
 </section>
 
+<section>
+    <div class="download-pdf">
+    <!-- Hier ersetze 'your-pdf-file.pdf' durch den tatsächlichen Dateinamen deines PDFs -->
+    <a href="c:\Users\Anna\Downloads\swissmilk_chocolate-chip-cookies-american-cookies.pdf"class="download-link" download="downloaded-file.pdf">Original Recipe</a>
+    </div>
+</section>
+
+<section id="impressum" class="impressum-container">
+    <h2>Impressum</h2>
+    <p> Noseryoung AG</p>
+    <p>Herostrasse 12</p>
+    <p>CH-8048 Zürich</p>
+    <p>Telefon: +41 31 917 53 80</p>
+    <p>E-Mail: anna.nell@noseryoung.com</p>
+</section>
 <!-- Bootstrap JS und jQuery einbinden (für Navbar-Funktionalität) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

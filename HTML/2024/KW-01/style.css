@@ -1,8 +1,6 @@
-/* Globale Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #d6c8b4
-    ;
+    background-color: #d6c8b4;
     margin: 0;
     padding: 0;
     transition: background-color 0.3s ease;
@@ -29,29 +27,35 @@ h1 {
     
   
 }
-
+h2{
+    font-family: 'David'; 
+}
 
 .col-md-6
 .section-title {
-    font-size: 130px; /* 2rem ist eine Maßeinheit für die Größe der Schrift, du kannst dies nach Bedarf anpassen */
+    font-size: 130px; 
     text-transform: uppercase;
-    text-align: center; /* Hier sollte "center" für die horizontale Ausrichtung verwendet werden */
-    font-family: 'David'; /* Ändere 'Arial' durch die gewünschte Schriftart */
+    text-align: center; 
+    font-family: 'David'; 
     color: #37533c;
 }
 
 
-
+.element.style{
+    text-align: center
+}
 
 .text-container {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    height: 100%; 
+    height: 100%;
+    text-align: center 
+
 }
 
 .text-container h1, .text-container p {
-    margin: 0; /* Entfernt den Standardabstand von h1 und p */
+    margin: 0; 
 }
 
 .header {
@@ -71,7 +75,7 @@ h1 {
     color: #37533c;
 }
 
-/* Inhaltsverzeichnis Styles */
+
 .contents {
     background-color: #f0f0f0;
     border-left: 5px solid #37533c; 
@@ -118,7 +122,7 @@ h1 {
     border-color: #37533c; 
 }
 
-/* Hauptseite mit Textabschnitten Styles */
+
 .section {
     margin-bottom: 30px;
 }
@@ -154,14 +158,75 @@ h1 {
 .section-image{
    max-width: 40%;
    border-radius: 3%; 
-    overflow: hidden; 
+    overflow: hidden;
+    margin-right: 10px;
+    width: 150px; 
+    height: 150px;  
+    margin-bottom: 20px;
 }
 
 .impressum p {
     margin: 0;
 }
 
-/* Hover-Effekt auf der gesamten Seite */
+body {
+     
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+.impressum-container {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+   
+
+}
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+   
+}
+
+.impressum-container p {
+    margin-bottom: 8px; /* Hier kannst du den gewünschten Abstand einstellen */
+    color: #666;
+}
+
+.download-pdf{
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+download-link {
+    display: inline-block; /* Setzt den Link auf Inline-Block, um text-align zu beeinflussen */
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+
 .container:hover,   
 .contents:hover,
 .about:hover,
