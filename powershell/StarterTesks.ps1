@@ -24,7 +24,7 @@ if(10 -eq $i){
     2 { code ;break}
     3 { code ;break }
     4 { code ;break }
-    default { #code }
+    default { code }
     }
 
     while($val -ne 10){
@@ -57,24 +57,20 @@ NOT --> -ne
 <= --> -ge
 >= --> -le
 
-# ---Bash like tasks---
-# Display the current date and time
-Get-date
-# Display a list of all the files in the current directory
-ls
-# Display a list of all the files in a specific directory
-ls /path/to/directory
-# Display the contents of a file
-cat
+
 # Create a new folder
-mkdir
+mkdir myfolder
+ 
 # Create a new file
-touch
+New-Item -Name "myfile.txt" -ItemType File
+ 
 # Copy a file to a different location
->>
-# Rename a file 
-mv
+Copy-Item -Path .\myfile.txt -Destination .\myfolder\
+ 
+# Rename a file
+Rename-Item -Path .\myfile.txt -NewName "my_file.txt"
+ 
 # Delete a file
-rm
+Remove-Item -Path .\my_file.txt
 # Create a new text file and append some text to it
 echo "text" >> sample_file
