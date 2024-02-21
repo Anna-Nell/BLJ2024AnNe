@@ -2,9 +2,15 @@
 # Wie erstelle ich eine neue Variable?
 $var = 5
 # Wie erstelle ich ein Array?
-$arr = @("hund")
+$arr = @("hund",37,"cat",38)
 # Wie erstelle ich ein Mehrdimensionales Array?
-$arr = @(("hund"),("cat"))
+$arr = 1,2,(1,2,3),3
+$arr[0]
+$arr[1]
+$arr[2]
+$arr[2][0]
+$arr[2][1]
+
 # Wie funktionieren bekannte Kontrollstrukturen? (If/Else, Switch, While, DoWhile, For, ForEach)
 if(10 -eq $i){
     #code
