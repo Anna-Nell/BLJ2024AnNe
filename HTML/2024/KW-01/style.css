@@ -127,6 +127,10 @@ h2{
     margin-bottom: 30px;
 }
 
+.attention {
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
 .section-title {
     font-size: 24px;
     text-transform: uppercase;
@@ -180,10 +184,9 @@ body {
 
 .impressum-container {
     max-width: 550px;
-    margin: 0 auto;
+    
     padding: 20px;
     background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 8px;
@@ -201,26 +204,26 @@ body {
 }
 
 .impressum-container p {
-    margin-bottom: 8px; /* Hier kannst du den gewünschten Abstand einstellen */
+    margin-bottom: 1px; /* Hier kannst du den gewünschten Abstand einstellen */
     color: #666;
 }
 
 .download-pdf{
     max-width: 550px;
-    margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
+    margin: 0 auto;
 
 }
 
 download-link {
-    display: inline-block; /* Setzt den Link auf Inline-Block, um text-align zu beeinflussen */
+    display: inline-block; 
     padding: 10px 20px;
-    background-color: #3498db;
-    color: #ffffff;
+    background-color: #37533c;
+    color: #37533c;
     text-decoration: none;
     border-radius: 5px;
     
