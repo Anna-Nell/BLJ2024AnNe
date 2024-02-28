@@ -4,7 +4,7 @@ $usedWords = @()
 
 while ($true) {
     
-    $startWordIndex = Get-Random -Minimum 0 -Maximum $wordList.Count
+
     $startwort = $wordList[$startWordIndex]
 
     
@@ -19,13 +19,13 @@ while ($true) {
     
     $startwortEndbuchstabe = $startwort[-1]
 
-    if ($nextWortWort -eq "") {
+    if ($nextWort -eq "") {
         Write-Host "No further word entered. Game over"
         break
     }
     elseif ($nextWort -in $wordList -and $nextWort[0] -eq $startwortEndbuchstabe) {
         
-        $startwort += " $nextsWort"
+        $startwort += "$nextsWort"
         Write-Host $startwort
     }
     else {
