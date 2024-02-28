@@ -1,10 +1,17 @@
 # Erstellen Sie einen Ordner TestingPurpose mit 2 Unterordner SubFolder1 und SubFolder2
+New-Item -ItemType Directory -Path ".\TestingPurpose\SubFolder1" -Force
+New-Item -ItemType Directory -Path ".\TestingPurpose\SubFolder2" -Force
 # Erstellen Sie einige Testdateien in diesen Ordnern:
 # 	TypeATest1.txt, TypeATest2.txt ... TypeATest50.txt in SubFolder1
 # 	TypeBTest51.txt, TypeBTest52.txt ... TypeBTest100 in SubFolder2
+ForEach-Object {
+    if($_ % 2 -eq 0) {
+        
+    }
 
 
-# Verschiebe alle Dateien, die eine ungerade Zahl im Namen haben, in SubFolder2.
+}
+# Verschiebe alle Dateien, die eine ungerade Zahl im Namen haben, in SubFolder2. (Modulo)
 # Verschiebe alle Dateien, die eine gerade Zahl im Namen haben, in SubFolder1.
 
 # Benenne den Ordner SubFolder1 in EvenFilesContainer und SubFolder2 in OddFilesContainer um.
