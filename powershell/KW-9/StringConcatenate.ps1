@@ -1,7 +1,7 @@
 $start_word = "Hello"
 Write-Host "Start word: $start_word"
  
-$valid_words = Get-Content -Path "C:\Users\Anna\BLJ2024AnNe\powershell\KW-8\wordlist.txt"
+$valid_words = Get-Content -Path "C:\Users\Anna\BLJ2024AnNe\powershell\KW-9\wordlist.txt"
  
 function Is-Valid {
     param(
