@@ -23,15 +23,11 @@ et-ChildItem -Path ".\TestingPurpose\SubFolder1" | Where-Object {$_.Name -match 
 Rename-Item -Path ".\TestingPurpose\SubFolder1" -NewName "EvenfilesContainer" -Force
 Rename-Item -Path ".\TestingPurpose\SubFolder2" -NewName "OddFilesContainer" -Force
 # Erstellen Sie eine Liste aller Dateien, die sich derzeit im Ordner TestingPurpose befinden.
-$listfiles = Get-ChildItem
-#      Beispiel: MasterFile.txt:
+$listfiles = Get-ChildItem -path ".\TestingPurpose" -Recurse -File | Select-Object FullName
 
-# 		Ab JJJJMMTT HH: MM befinden sich folgende Dateien in TestingPurpose:
-# 		C:\TestingPurpose\EvenFilesContainer\TypeBTest2.txt
-# 		.
-# 		.
-# 		C:\TestingPurpose\OddFilesContainer\TypeATest99.txt
+Write-Host "Ab $(Get-Date -Format 'yyyyMMdd HH:mm') befinden sich folgende Dateien in TestingPurpose:"
+$filesList | ForEach-Object { Write-Host $_.FullName }
 
 # Löschen Sie alle Dateien, die mit TypeA beginnen
-
+Remove-Item -Path ".\TestingPurpose\EvenFilesContainer\TypeA*" -Force
 
