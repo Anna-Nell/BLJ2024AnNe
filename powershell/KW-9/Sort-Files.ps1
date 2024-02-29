@@ -17,11 +17,13 @@ ForEach-Object {
 Get-ChildItem -Path ".\TestingPurpose\SubFolder1" | Where-Object {$_.Name -match '\d+' -and [int]$Matches[0] % 2 -ne 0} Move-Item -direstory ".\Testing\SubFolder2"
 
 # Verschiebe alle Dateien, die eine gerade Zahl im Namen haben, in SubFolder1.
+et-ChildItem -Path ".\TestingPurpose\SubFolder1" | Where-Object {$_.Name -match '\d+' -and [int]$Matches[0] % 2 -eq 0} Move-Item -direstory ".\Testing\SubFolder1"
 
 # Benenne den Ordner SubFolder1 in EvenFilesContainer und SubFolder2 in OddFilesContainer um.
 Rename-Item -Path ".\TestingPurpose\SubFolder1" -NewName "EvenfilesContainer" -Force
 Rename-Item -Path ".\TestingPurpose\SubFolder2" -NewName "OddFilesContainer" -Force
 # Erstellen Sie eine Liste aller Dateien, die sich derzeit im Ordner TestingPurpose befinden.
+$listfiles = Get-ChildItem
 #      Beispiel: MasterFile.txt:
 
 # 		Ab JJJJMMTT HH: MM befinden sich folgende Dateien in TestingPurpose:
