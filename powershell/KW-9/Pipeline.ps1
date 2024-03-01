@@ -16,10 +16,17 @@ Get-Service | Where-Object { $_.Status -eq "Running" } | Select-Object DisplayNa
 
 # Retrieve a list of all the processes on the computer and then stop the processes that contain "Team" in the name. 
 
+Get-Process | Where-Object { $_.Name -like "*Team*"} | Stop-Process -Force
 
 # Retrieve a list of all the local users username and last logon time and sort them by their last logon time. Don't list users, which have never logged on.
 
-
+Get-WinEvent -LogName 'Security' | Where-Object { $_.Id -eq 4624 } | ForEach-Object {
+    [PSCustomObject]@{
+        UserName = $_.Properties[5].Value
+        LastLogonTime = $_.TimeCreated
+    }
+} | Sort-Object LastLogonTime -Descending
 # Retrieve a list of all the files in the current directory and then select the files that have been modified in the past week. Sort them by their modification date.
-
+$oneWeekAgo = (Get-Date).AddDays(-7)
+Get-ChildItem | Where-Object { -not $_.PSIsContainer -and $_.LastWriteTime -ge $oneWeekAgo } | Sort-Object LastWriteTime
 
