@@ -20,10 +20,11 @@ Get-Process | Where-Object { $_.Name -like "*Team*"} | Stop-Process -Force
 
 # Retrieve a list of all the local users username and last logon time and sort them by their last logon time. Don't list users, which have never logged on.
 
-Get-WinEvent -LogName 'Security' | Where-Object { $_.Id -eq 4624 } | ForEach-Object {
+Get-WinEvent -LogName 'Application' | Where-Object { $_.Id -eq 1001 } | ForEach-Object {
     [PSCustomObject]@{
-        UserName = $_.Properties[5].Value
-        LastLogonTime = $_.TimeCreated
+        Source = $_.ProviderName
+        Message = $_.Message
+        TimeCreated = $_.TimeCreated
     }
 } | Sort-Object LastLogonTime -Descending
 # Retrieve a list of all the files in the current directory and then select the files that have been modified in the past week. Sort them by their modification date.
