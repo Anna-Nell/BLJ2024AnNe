@@ -99,11 +99,10 @@ $button_Create = Create-Button -text "Erstellen" -x 20 -y 250 -OnClick {
     $email = "$firstName.$lastName@noseryoung.ch"
     $Global:username = "$firstName.$lastName"
 
-    $password = Generate-Password
-    $securePassword = ConvertTo-SecureString -String $password -AsPlainText -Force
+    
 
     # Erstelle den Benutzer im Active Directory
-    New-ADUser  $username  $firstName  $lastName  $description  $office  $jobTitle  $address  $email  $phone  $securePassword  $true
+    New-ADUser -Name "$firstname $lastname" -GivenName $firstname -Surname $lastname -Description $description -Office $office -OfficePhone $phone -Title $jobtitle -StreetAddress $address -EmailAddress $email -SamAccountName $username -AccountPassword (ConvertTo-SecureString "Passwort123!" -AsPlainText -Force) -Enabled $true -PassThru
 
     Write-Host "Benutzer $username erfolgreich im Active Directory erstellt. Passwort: $password"
 
@@ -112,7 +111,7 @@ $button_Create = Create-Button -text "Erstellen" -x 20 -y 250 -OnClick {
 }
 
 
-$button_Close = Create-Button -text "Schließen" -x 120 -y 250 -OnClick {
+$button_Close = Create-Button -text "Schliessen" -x 120 -y 250 -OnClick {
     $window.Close()
 }
 
