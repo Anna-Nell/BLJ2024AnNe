@@ -101,13 +101,15 @@ $button_Create = Create-Button -text "Erstellen" -x 20 -y 250 -OnClick {
 
     
 
-    # Erstelle den Benutzer im Active Directory
+    #Erstellt den Benutzer im Active Directory
     New-ADUser -Name "$firstname $lastname" -GivenName $firstname -Surname $lastname -Description $description -Office $office -OfficePhone $phone -Title $jobtitle -StreetAddress $address -EmailAddress $email -SamAccountName $username -AccountPassword (ConvertTo-SecureString "Passwort123!" -AsPlainText -Force) -Enabled $true -PassThru
 
-    Write-Host "Benutzer $username erfolgreich im Active Directory erstellt. Passwort: $password"
-
+    <# Action to perform if the condition is true #>
+    Write-Host "Benutzer $username erfolgreich im Active Directory erstellt.Passwort:Passwort123! "
+    
     $csvData = "$firstName;$lastName;$address;$phone;$office;$jobTitle;$description"
-    Add-Content -Path "Benutzer.csv" -Value $csvData
+    Add-Content -Path "C:\Benutzer.csv" -Value $csvData
+
 }
 
 
