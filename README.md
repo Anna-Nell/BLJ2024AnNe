@@ -1,6 +1,5 @@
 # Anna Nell's Work Repository
 
-![Shrek](path/to/shrek/image.png)
 
 ## Introduction
 
@@ -10,12 +9,12 @@ Hello! My name is **Anna Nell**. I work at **Noseryoung** and this repository co
 ## Repository Contents
 
 In this repository, you will find:
-- **Project Files:** Source code, documentation, and resources for the projects I am working on.
-- **Scripts:** Useful scripts and tools that I have developed.
+- **Project Files:** Source code, documentation, and resources for the projects I am worked at.
+- **Scripts:** Unuseful scripts and tools that I have developed.
 - **Documentation:** Manuals, guides, and notes that help understand and use the contents of this repository.
 
 
 ---
 
-![Shrek](C:\Users\Anna\Pictures\Saved Pictures/shreck.png)
+![Shrek](https://i.pinimg.com/736x/a9/ef/a9/a9efa9e0d9a868bf182a920938c0c094.jpg)
 
