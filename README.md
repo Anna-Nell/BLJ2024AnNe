@@ -1,6 +1,5 @@
 # Anna Nell's Work Repository
 
-![Shrek](path/to/shrek/image.png)
 
 ## Introduction
 
@@ -17,5 +16,5 @@ In this repository, you will find:
 
 ---
 
-![Shrek](C:\Users\Anna\Pictures\Saved Pictures/shreck.png)
+![Shrek](Bilder/shreck.png)
 
