@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #ffffff00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    
+}
+
+nav .active {
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 'Times New Roman';
+    color:#000000
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+    text-align: center;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0.5em 1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+nav .login {
+    color: #000000;
+    margin-left: 750px;
+}
+
+nav .button {
+    background-color: #FFA500;
+    color: #000000;
+    padding: 1em 1.5em;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav .button:hover {
+    background-color: #FF8C00;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 200px;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 5px 0;
+    gap: 4px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-form {
+    width: 55%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+   
+}
+
+.form-name label {
+    width: 40%;
+    font-size: 14px;
+    
+}
+
+.form-name input,
+.form-name textarea {
+    width: 45%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-email {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-email label {
+    width: 45%;
+    font-size: 14px;
+}
+
+.form-email input,
+.form-email textarea {
+    width: 45%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-nachricht {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-nachricht label {
+    width: 45%;
+    font-size: 14px;
+}
+
+.form-nachricht input,
+.form-nachricht textarea {
+    width: 45%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    width: 30%;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+footer {
+    background-color: #3b6b75;
+    padding: 80px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer-section {
+    margin: 10px;
+    text-decoration: underline;
+    color: #ffffff
+}
+
+.footer-fragen{
+ color:#ffffff;
+
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, 
+.footer-section a, 
+.footer-section ul {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 5px 0;
+    text-decoration: none;
+    margin-left: -5px;
+}
+
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+   
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 15px;
+}
+
+.social-media img {
+    width: 20px;
+    height: 20px;
+}

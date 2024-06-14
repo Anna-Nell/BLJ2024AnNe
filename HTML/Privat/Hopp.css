@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ffffff00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    
+}
+
+nav .active {
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 'Times New Roman';
+    color:#ffffff;
+
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+    text-align: center;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-top: 10px;
+    color: #fff6f6;
+    padding: 1em 1em;
+    transition: color 0.3s;
+   
+}
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+nav .login {
+    color: #ffffff;
+    margin-left: 750px;
+    
+}
+
+nav .button {
+    background-color: #FFA500;
+    color: #000000;
+    padding: 1em 1.5em;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav .button:hover {
+    background-color: #FF8C00;
+}
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('church-choir.jpg') center center/cover no-repeat;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.hero .overlay h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero .overlay p {
+    font-size: 1.2em;
+    max-width: 600px;
+}
+
+.blog-container {
+    text-align:center;
+    padding: 20px;
+   
+}
+
+
+.blog-posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.blog-post {
+    width: 200px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    
+}
+
+.blog-post img {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-post h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: courier;
+    text-decoration: underline; 
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+.hero-section {
+    background-color: #3b6b75;
+    color: white;
+    text-align: center;
+    padding: 200px 20px;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-section button {
+    background-color: #f5a25d;
+    color: white;
+    border: none;
+    padding: 1.5em 2em;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.hero-section button:hover {
+    background-color: #e59450;
+}
+
+footer {
+    background-color: #fff;
+    padding: 80px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer-section {
+    margin: 10px;
+    text-decoration: underline
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, 
+.footer-section a, 
+.footer-section ul {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.social-media img {
+    width: 20px;
+    height: 20px;
+}
